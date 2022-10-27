@@ -11,6 +11,12 @@
     </title>
 </head>
 <body>
+    
+    <div class="btnContainer">
+       <button class="Restart" onclick="cleargrid.forEach(resetGame)">Restart</button>
+    <button class="vsAi">Vs Bot</button> 
+    </div>
+    
     <div class="GameBoard">
         <grid id="grid0" onclick="placeMarker(0).draw()"></grid>
         <grid id="grid1" onclick="placeMarker(1).draw()"></grid>
@@ -22,6 +28,6 @@
         <grid id="grid7" onclick="placeMarker(7).draw()"></grid>
         <grid id="grid8" onclick="placeMarker(8).draw()"></grid>
     </div>
-    
+    <div class="displayWinner"></div>
 </body>
 </html>

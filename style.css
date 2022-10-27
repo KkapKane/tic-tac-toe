@@ -1,15 +1,18 @@
-.body {
+body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
     height: 100vh;
+
 }
 
 .GameBoard {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     border: 2px solid black;
     height: 500px;
     width: 500px;
@@ -25,4 +28,18 @@ grid {
     border: 1px solid black;
     cursor: pointer;
     
+}
+button {
+    height: 50px;
+    width: 100px;
+}
+.btnContainer {
+    margin: 30px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.displayWinner {
+    font-size: 60px;
 }
