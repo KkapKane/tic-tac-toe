@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Silkscreen&display=swap');
+:root {
+    --pointer: 'all';
+}
+
 body {
+    font-family: 'Roboto';
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,32 +12,55 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    background-color: rgb(102, 102, 102);
+    background-image: url('image.png');
 
 }
-
+.mainCont {
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    background-color: rgba(39, 38, 38, 0.6);
+    box-shadow: 10px 20px 5px 5px white;
+    gap: 20px;
+}
 .GameBoard {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    border: 2px solid black;
+    border: 2px solid rgb(226, 212, 212);
     height: 500px;
     width: 500px;
+    box-shadow: 2px 2px 2px 2px rgb(112, 110, 110);
 }
 
 grid {
+    color: rgb(80, 229, 229);
+    background-color: rgb(141, 121, 121);
+    pointer-events: var(--pointer);
     max-width: 200px;
     max-height: 220px;
     font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     cursor: pointer;
     
 }
 button {
+    color: white;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, .9);
     height: 50px;
-    width: 100px;
+    width: 400px;
+    border-radius: 15px;
 }
 .btnContainer {
     margin: 30px;
@@ -41,5 +70,11 @@ button {
 }
 
 .displayWinner {
+    color: white;
+    width: 500px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px 5px black;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .9);
     font-size: 60px;
 }

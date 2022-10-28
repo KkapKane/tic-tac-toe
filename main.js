@@ -63,7 +63,8 @@ function Winner() {
       GameBoard.board[4] == "X" &&
       GameBoard.board[8] == "X")
   {
-    GameBoard.Display.textContent = "Player Wins"
+      GameBoard.Display.textContent = "Player Wins"
+      document.body.style.setProperty("--pointer", 'none')
  
     
   }
@@ -94,6 +95,7 @@ function Winner() {
       GameBoard.board[8] == "O")
      {
       GameBoard.Display.textContent = "Bot wins!"
+      document.body.style.setProperty("--pointer", 'none')
     
     
   }
@@ -108,7 +110,8 @@ function Winner() {
       GameBoard.board[7] !== " " &&
       GameBoard.board[8] !== " "
   ) {
-    GameBoard.Display.textContent = "Draw";
+      GameBoard.Display.textContent = "Draw";
+      document.body.style.setProperty("--pointer", 'none')
      
       
     }
@@ -121,5 +124,5 @@ function resetGame(element) {
         ' ', ' ', ' ',
         ' ', ' ', ' '];
     element.textContent = ' ';
-   
+    document.body.style.setProperty("--pointer", 'all')
 }
